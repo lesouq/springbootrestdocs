@@ -35,7 +35,7 @@ public class ProductControllerTest {
                 .andExpect(MockMvcResultMatchers.content().string(containsString("WD SSD"))).andDo(document("product/get-product-by-id"));
     }
 
-    @Test
+    /*@Test
     public void getProductById() throws Exception{
         this.mockMvc.perform(RestDocumentationRequestBuilders.get("/products/{code}", 2))
                 .andExpect(status().isOk())
@@ -54,5 +54,5 @@ public class ProductControllerTest {
                                 fieldWithPath("name").description("Name of the product"),
                                 fieldWithPath("description").description("Product Description"),
                                 fieldWithPath("price").description("Product Price"),fieldWithPath("stock").description("Product stock"))));
-    }
+    }*/
 }
