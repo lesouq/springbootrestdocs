@@ -12,7 +12,7 @@
     - Rejoindre les extraits générés
     - Ajouter des informations supplémentaires
     
-  -Conclusion
+  - Conclusion
   
 # Avantage de Spring Rest Docs
   
@@ -55,6 +55,7 @@ Le controller REST un un controller avec deux méthodes:
   modifier quelques éléments dans ProductControllerTest:
   
   @AutoConfigureRestDocs(outputDir = "target/snippets")
+  
   .andExpect(MockMvcResultMatchers.content().string(containsString("WD SSD"))).andDo(document("product/get-product-by-id"));
   
  Le "@AutoConfigureRestDocs" prend comme argument un emplacement de répertoire pour les extraits générés.
