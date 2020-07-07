@@ -32,11 +32,11 @@ Voici quelques avantages:
 
 Pour la prise en charge de Spring Rest Docs, il faut ajouter dans les dépendances "spring-restdocs-mockmvc"
 
-   "<dependency>
+   (<dependency>
       <groupId>org.springframework.restdocs</groupId>
       <artifactId>spring-restdocs-mockmvc</artifactId>
       <scope>test</scope>
-   </dependency>"
+   </dependency>)
    
    # Création controller REST
 Le controller REST un un controller avec deux méthodes:
